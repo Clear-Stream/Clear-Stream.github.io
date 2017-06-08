@@ -1,23 +1,147 @@
-body{
-    font-size: 14px;
-    font-family: "微软雅黑" ;
-    margin: 20px;
-    background-color: #f6f6f6;
+
+@charset "utf-8";
+* {
+	margin: 0;
+	padding: 0;
 }
-.inner{
-    width: 80%;
-    margin: 0 auto;
+@font-face {
+	font-family: "Myfont";
+	src:url(../fonts/Munro.eot), url(../fonts/Munro.otf), url(../fonts/Munro.svg), url(../fonts/Munro.ttf), url(../fonts/Munro.woff);
 }
-img.logo{
-    width: 60px;
+a{
+	text-decoration: none;
 }
-p.describe{
-    text-indent: 2em;
+li {
+	list-style: none;
 }
-a.mdn img{
-    width: 80px;
-    transition: all 0.2s ;
+img {
+	border: 0;
 }
-a.mdn img:hover{
-    width: 100px;
+input {
+	border: none;
+}
+header, footer, article, section, nav, menu, hgroup {
+	display: block; 
+}
+h1, h2, h3, h4, h5, h6 {
+	text-align: center;
+	letter-spacing: 1px;
+	font-weight: normal;
+}
+body {
+  font-size: 14px;
+  font-family: "微软雅黑" ;
+  background-color: #f6f6f6;
+  overflow-x: hidden;
+}
+header {
+  width: 100%;
+  min-height: 400px;
+  padding: 90px 0;
+  background: url(../images/bg.jpg) no-repeat left top;
+  background-size: cover;
+}
+.part1{
+  text-align: center;
+}
+header img {
+	margin: 0 auto;
+  width: 100px;
+}
+header h1 {
+	color: #fff;
+	font-size: 24px;
+  line-height: 1.1em;
+	font-weight: 500;
+}
+header h2 {
+	color: #fff;
+	font-size: 16px;
+	line-height: 1em;
+}
+header h3 {
+  font-size: 28px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+header h4 {
+  font-size: 14px;
+  color: #fff;
+  font-family: 'Merriweather Sans', sans-serif;
+}
+header h4 a {
+  color: #fff;
+  line-height: 2em;
+  transition: all 0.2s;
+}
+header h4 a:hover {
+  color: #4867aa;
+  text-decoration: none;
+}
+section{
+  /*padding: 30px;*/
+  text-align: center;
+}
+section h3 {
+  font-size: 32px;
+  color: #000;
+  margin-bottom: 20px;
+}
+section .line {
+  display: block;
+  background-color: #56b2e6;
+  width: 50px;
+  height: 3px;
+  margin: 10px auto;
+}
+.about img {
+  width: 100px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.about p {
+  color: #333;
+  font-size: 14px;
+  line-height: 1.5em;
+  width: 60%;
+  text-indent: 2em;
+}
+.table > tbody > tr > td {
+  text-align: left;
+  font-size: 12px;
+}
+.table > thead > tr > th:first-child,
+.table > tbody > tr > td:first-child{
+  width: 60px;
+}
+.download a {
+  display: inline-block;
+  width: 120px;
+  height: 48px;
+  margin: 20px 0;
+  font-size: 14px;
+  line-height: 48px;
+  color: #56b2e6;
+  text-align: center;
+  border: 1px dotted #56b2e6;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.download a:hover {
+  background: #56b2e6;
+  color: #fff;
+  text-decoration: none;
+}
+.contact {
+  width: 100%;
+  min-height: 400px;
+  background: url(../images/contact.jpg) no-repeat left top;
+  background-size: cover;
+}
+.contact h3 {
+  color: #ffff;
+  padding-top: 30px;
 }
