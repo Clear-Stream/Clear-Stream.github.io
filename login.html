@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="description" content="一个真实的网络问答社区，帮助你寻找答案，分享知识。">
+	<title>知乎 - 与世界分享你的知识、经验和见解</title>
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+	<div class="content">
+		<header>
+				<h1 class="logo"></h1>
+				<p>与世界分享你的知识、经验和见解</p>
+		</header>
+		<section>
+			<div class="tabchange">
+				<div class="tabs">
+					<a href="#register" class="active" onclick="return false;" id="one">注册</a>
+					<a href="#login" onclick="return false;">登录</a>
+					<span class="indicator"></span>
+				</div>
+			</div>
+			<div id="register" class="tabcontent">
+				<div class="form-input">
+					<form action="" method="post">
+						<div class="input-item">
+							<input type="text" placeholder="姓名">
+						</div>
+						<div class="input-item">
+							<input type="text" placeholder="手机号">
+						</div>
+						<div class="input-item">
+							<input type="text" placeholder="密码（不少于6位）">
+						</div>
+					</form>
+				</div>
+				<div class="login">
+					<button type="button" class="sign-btn">注册知乎</button>
+				</div>
+				<p class="agree-tip">点击「注册」按钮，即代表你同意<a href="#">《知乎协议》</a></p>
+				<div class="DLapp">
+					<button type="button" class="DL-btn">下载知乎App</button>
+				</div>
+			</div>
+			<div id="login" class="tabcontent">
+				<div class="form-input">
+					<form action="" method="post">
+						<div class="input-item">
+							<input type="text" placeholder="手机号或邮箱">
+						</div>
+						<div class="input-item">
+							<input type="text" placeholder="密码">
+						</div>
+					</form>
+				</div>
+				<div class="login">
+					<button type="button" class="sign-btn">登录</button>
+				</div>
+				<div class="other-login">
+					<div class="ph-no">
+						<a href="#" class="phlogin">手机验证码登录</a>
+						<a href="#" class="notlogin">无法登录？</a>
+						<div class="clear"></div>
+					</div>
+					<div class="otherstyle">
+						<a href="#">社交帐号登录</a>
+						<div class="clear"></div>
+					</div>
+				</div>
+				<div class="DLapp">
+					<button type="button" class="DL-btn">下载知乎App</button>
+				</div>
+			</div>
+		</section>
+	</div>
+	<footer>
+		<p class="pcstyle">&copy;2017知乎<span class="dot">·<span>
+			<a href="https://zhuanlan.zhihu.com/" target="_blank">知乎专栏 <span class="dot">·<span> </a>
+			<a href="https://www.zhihu.com/roundtable" target="_blank">知乎圆桌 <span class="dot">·<span> </a>
+			<a href="https://www.zhihu.com/explore" target="_blank">发现 <span class="dot">·<span> </a>
+			<a href="https://www.zhihu.com/app/" target="_blank">移动应用 <span class="dot">·<span> </a>
+			<a href="https://www.zhihu.com/org/signin">使用机构帐号登录 <span class="dot">·<span> </a>
+			<a href="https://www.zhihu.com/contact">联系我们 <span class="dot">·<span> </a>
+			<a href="https://www.zhihu.com/jubao">举报投诉 <span class="dot">·<span> </a>
+			<a href="http://zhihu.zhiye.com/home" target="_blank">来知乎工作</a><br>
+			<a href="http://www.miibeian.gov.cn/" target="_blank">京 ICP 证 110745 号 <span class="dot">·<span> </a>
+			京公网安备 11010802010035 号 <span class="dot">·<span>&nbsp;
+			<a href="http://zhstatic.zhihu.com/assets/zhihu/publish-license.jpg" target="_blank">出版物经营许可证</a>
+		</p>
+		<p class="phstyle">
+			<a href="https://www.zhihu.com/org/signin">使用机构帐号登录 <span class="dot">·<span> </a>
+			<a href="https://www.zhihu.com/contact">联系我们 <span class="dot">·<span> </a>
+		</p>
+		<div class="chengxin">
+			<a href="https://credit.cecdc.com/CX20170607038331320388.html" target="_blank">
+				<img src="images/chengxing_logo.png" alt="">
+			</a>
+		</div>
+	</footer>
+	<div class="fankui">
+		<a href="#"><img src="images/fankui.png" alt=""></a>
+	</div>
+	<script src="scripts/jquery-1.11.1.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".tabs a").click(function(){
+				$(".tabcontent").hide();
+				$(".tabs a").removeClass("active");
+				$($(this).attr("href")).show();
+				$(this).addClass("active");
+			})
+			$(".fankui a").hover(function(){
+				$(".fankui a img").attr("src","images/fankui-hover.png");
+			},function(){
+				$(".fankui a img").attr("src","images/fankui.png")
+			})
+		})
+	</script>
+</body>
+</html>
