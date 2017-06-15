@@ -232,6 +232,9 @@ p.phstyle {
   outline: 0;
   text-align: center;
 }
+.fankui a:hover {
+  background:  url(hover.png) no-repeat center center;
+}
 .fankui a img {
   padding-top: 11px; 
 }
