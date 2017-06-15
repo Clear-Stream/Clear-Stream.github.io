@@ -112,7 +112,11 @@
 				$($(this).attr("href")).show();
 				$(this).addClass("active");
 			})
-			
+			$(".fankui a").hover(function(){
+				$(".fankui a img").attr("src","images/fankui-hover.png");
+			},function(){
+				$(".fankui a img").attr("src","images/fankui.png")
+			})
 		})
 	</script>
 </body>
