@@ -97,9 +97,6 @@ section .tabs a.active {
   overflow: hidden;
   padding: 1px 0;
 }
-/*.input-item {
-  border-top: 1px solid #d5d5d5;
-}*/
 input[type="text"] {
  width: 100%;
   font-size: 14px;
@@ -231,6 +228,10 @@ p.phstyle {
   border: 0;
   outline: 0;
   text-align: center;
+  background: url(../images/fankui.png) no-repeat center center;
+}
+.fankui a:hover {
+  background: url(../images/fankui-hover.png) no-repeat center center;
 }
 .fankui a img {
   padding-top: 11px; 
